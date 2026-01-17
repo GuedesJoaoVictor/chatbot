@@ -1,0 +1,16 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Baileys / WhatsApp auth
+auth/
+*.session.json
+
+# Environment variables
+.env
+
+# OS
+.DS_Store
+Thumbs.db

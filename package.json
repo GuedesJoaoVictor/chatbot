@@ -1,0 +1,13 @@
+{
+  "name": "bot-veraz",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^7.0.0-rc.9",
+    "dotenv": "^17.2.3",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
