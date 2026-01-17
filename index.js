@@ -5,7 +5,6 @@ import makeWASocket, {
 import 'dotenv/config';
 import P from 'pino';
 import qrcode from 'qrcode-terminal';
-import https from 'node:https';
 
 const GREETING_REGEX = /\b(oi|ola|bom dia|boa tarde|boa noite|tudo (bem|bom)\/?|ola!|olá!|oie|eai|opa)\b/;
 const MENU_REGEX = /\b(menu|voltar|inicio|início|0)\b/;
@@ -247,6 +246,10 @@ SEXTA FEIRA 6:10, 7:10, 8:10, 11:10, 12:10, 16:10, 17:10, 18:10 E 19:10`
     });
 }
 
+startBot();
+
+import https from 'node:https';
+
 const PORT = process.env.PORT || 3000;
 
 https.createServer((req, res) => {
@@ -256,4 +259,3 @@ https.createServer((req, res) => {
   console.log(`🌐 HTTP server rodando na porta ${PORT}`);
 });
 
-startBot();
