@@ -82,6 +82,7 @@ async function startBot() {
         const from = msg.key.remoteJid;
         const now = Date.now();
 
+        console.log(`📩 Mensagem recebida de ${from}: ${rawText}`);
         const state = userState.get(from) || { step: 'START' };
 
         if (MENU_REGEX.test(text)) {
